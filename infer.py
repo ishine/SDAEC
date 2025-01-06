@@ -20,7 +20,6 @@ network.load_state_dict(torch.load(save_name))
 
 alpha_predictor = AlphaPredictor(10)
 save_name = ''
-torch.save(alpha_predictor.state_dict(), save_name)
 alpha_predictor.load_state_dict(torch.load(save_name))
 
 mic, _ = sf.read('gen_dataset/tmp/near_echo.wav')
